@@ -66,10 +66,13 @@
 
             <EditText
                 android:id="@+id/pwd"
-                android:layout_width="match_parent"
+                android:layout_width="272dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@id/tv_psw"
+                android:layout_alignStart="@+id/tv_pwd"
+                android:layout_alignLeft="@+id/tv_pwd"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="102dp"
+                android:layout_marginLeft="102dp"
                 android:hint="请输入密码"
                 android:inputType="textPassword"
                 android:textSize="19sp" />
