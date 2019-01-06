@@ -91,7 +91,7 @@ public class zhuce extends AppCompatActivity {
     }
 
 
-    public static void zhuce(String zName, String zPwd,String zUser, Callback callback) {
+    public static void zhuce(String zName, String zUser, String zPwd,Callback callback) {
         OkHttpClient client = new OkHttpClient();
         //post 表单创建
         RequestBody body = new FormBody.Builder()

@@ -27,7 +27,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation 'com.cognifide.aet:report:3.1.0'
-    implementation 'com.google.android.support:wearable:2.4.0'
     implementation 'com.google:google:5'
     implementation 'com.google.code.gson:gson:2.8.5'
 }
