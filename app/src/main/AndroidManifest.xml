@@ -16,12 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".zhuce"
+        <activity
+            android:name=".zhuce"
             android:label="账号注册"
-            android:theme="@style/AppTheme"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".liaotian"
-            android:label="聊天室"></activity>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".liaotian"
+            android:label="聊天室" />
+        <activity android:name=".fragment.weixin_fragment" />
+        <activity android:name=".weixin_fragment" />
+        <activity android:name=".contactFragment"></activity>
     </application>
 
 </manifest>
