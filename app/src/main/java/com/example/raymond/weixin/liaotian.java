@@ -1,6 +1,5 @@
 package com.example.raymond.weixin;
 
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -14,17 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import java.util.ArrayList;
-
-
-//public class liaotian extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_liaotian);
-//    }
-//}
-
 public class liaotian extends AppCompatActivity implements View.OnClickListener {
     //声明存储fragment的集合
     private ArrayList<Fragment> fragments;
@@ -60,7 +48,6 @@ public class liaotian extends AppCompatActivity implements View.OnClickListener 
         weixin.setOnClickListener(this);
         contact.setOnClickListener(this);
 
-//        self.setOnClickListener(this);
         //为viewpager添加页面变化的监听以及事件处理
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -137,14 +124,10 @@ public class liaotian extends AppCompatActivity implements View.OnClickListener 
         //实例化所属四个fragment
         weixinFragment = new weixin_fragment();
         contactListFragment = new contactFragment();
-//        findFragment = new FindFragment();
-//        selfFragment = new SelfFragment();
         fragments = new ArrayList<>();
         //添加fragments到集合中
         fragments.add(weixinFragment);
         fragments.add(contactListFragment);
-//        fragments.add(findFragment);
-//        fragments.add(selfFragment);
         fragmentManager = getSupportFragmentManager();
         //为ViewPager设置适配器用于部署fragments
         viewPager.setAdapter(new MyFragmentPagerAdapter(fragmentManager));
@@ -152,19 +135,12 @@ public class liaotian extends AppCompatActivity implements View.OnClickListener 
 
         weixin = (LinearLayout) findViewById(R.id.weixin);
         contact = (LinearLayout) findViewById(R.id.contact);
-//        find = (LinearLayout) findViewById(R.id.find);
-//        self = (LinearLayout) findViewById(R.id.self);
-
 
         weixin_img = (ImageView) findViewById(R.id.weixin_img);
         contact_img = (ImageView) findViewById(R.id.contact_img);
-//        find_img = (ImageView) findViewById(R.id.find_img);
-//        self_img = (ImageView) findViewById(R.id.self_img);
 
         weixin_txt = (TextView) findViewById(R.id.weixin_txt);
         contact_txt = (TextView) findViewById(R.id.contact_txt);
-//        find_txt = (TextView) findViewById(R.id.find_txt);
-//        self_txt = (TextView) findViewById(R.id.self_txt);
     }
 
     /**
@@ -193,32 +169,6 @@ public class liaotian extends AppCompatActivity implements View.OnClickListener 
                 contact_txt.setSelected(true);
 
                 break;
-//            case R.id.find:
-//                viewPager.setCurrentItem(2);
-//                weixin_img.setSelected(false);
-//                weixin_txt.setSelected(false);
-//
-//                contact_img.setSelected(false);
-//                contact_txt.setSelected(false);
-//                find_img.setSelected(true);
-//                find_txt.setSelected(true);
-//                self_img.setSelected(false);
-//                self_txt.setSelected(false);
-//
-//                break;
-//            case R.id.self:
-//                viewPager.setCurrentItem(3);
-//                weixin_img.setSelected(false);
-//                weixin_txt.setSelected(false);
-//
-//                contact_img.setSelected(false);
-//                contact_txt.setSelected(false);
-//                find_img.setSelected(false);
-//                find_txt.setSelected(false);
-//                self_img.setSelected(true);
-//                self_txt.setSelected(true);
-//
-//                break;
         }
     }
 

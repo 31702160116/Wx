@@ -1,14 +1,11 @@
 package com.example.raymond.weixin;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 
 public class weixin_fragment extends Fragment {
@@ -20,11 +17,3 @@ public class weixin_fragment extends Fragment {
     }
 }
 
-//public class weixin_fragment extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.weixin_fragment);
-//    }
-//}
