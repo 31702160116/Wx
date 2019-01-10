@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tingzc"
     tools:context=".zhuce">
 
     <ImageView
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_head"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_margin="30dp"
         android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
@@ -103,7 +104,7 @@
             android:id="@+id/btn_send"
             android:layout_width="160dp"
             android:layout_height="48dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="45dp"
             android:layout_below="@id/layout"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"

@@ -72,8 +72,8 @@ public class zhuce extends AppCompatActivity {
                                 Intent intent = new Intent(zhuce.this,MainActivity.class);
                                 startActivity(intent);
                             }
-                            if (status.status.equals("用户名重复")){
-                                Toast.makeText(zhuce.this,"账号重复",Toast.LENGTH_SHORT).show();
+                            if (status.status.equals("用户名已存在")){
+                                Toast.makeText(zhuce.this,"账号已存在",Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
