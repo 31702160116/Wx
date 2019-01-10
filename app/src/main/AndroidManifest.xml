@@ -26,7 +26,7 @@
             android:label="聊天室" />
         <activity android:name=".fragment.weixin_fragment" />
         <activity android:name=".weixin_fragment" />
-        <activity android:name=".contactFragment"></activity>
+        <activity android:name=".contactFragment" />
     </application>
 
 </manifest>

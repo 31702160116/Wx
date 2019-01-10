@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                                 SharedPreferences dl = getSharedPreferences("data",MODE_PRIVATE);
                                 SharedPreferences.Editor edit = dl.edit();
                                 edit.putString("user",user.user);
+                                edit.putString("name",user.name);
                                 edit.commit();
                                 Toast.makeText(MainActivity.this,"登陆成功",Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this,liaotian.class);

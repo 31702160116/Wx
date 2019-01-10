@@ -1,57 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    tools:context=".weixin_fragment">
+    android:background="#d8e0e8" >
 
-
-    <RelativeLayout
-        android:id="@+id/rl_botton"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_alignParentBottom="true"
-        android:background="#eae7e7">
+        android:layout_height="wrap_content"
+        android:background="#97FFFF"
+        android:gravity="center"
+        android:text="欢迎使用聊天室"
+        android:textColor="#000"
+        android:textSize="20dp" />
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#fff"
-            android:orientation="horizontal">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/et_text"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10sp"
-                android:layout_marginTop="7sp"
-                android:layout_marginBottom="0sp"
-                android:layout_weight="2"
-                android:paddingLeft="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-            <Button
-                android:id="@+id/send"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="10sp"
-                android:layout_marginTop="7sp"
-                android:layout_marginRight="10sp"
-                android:layout_marginBottom="7sp"
-                android:layout_weight="0.5"
-                android:background="@drawable/btn_bian"
-                android:text="发送"
-                android:textColor="#fff"
-                android:textSize="15sp" />
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入信息"
+            android:maxLines="2" />
 
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="发送"
+            android:background="@drawable/start"/>
 
-    </RelativeLayout>
-
+    </LinearLayout>
 
 </LinearLayout>
